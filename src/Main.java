@@ -22,14 +22,14 @@ public class Main {
         for (int i : arr) {
             System.out.println("Сумма трат за месяц составила " + i + " рублей");
         }
-        int maxArr = 99_999;
+        int maxArr = 100_000;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxArr) {
                 maxArr = arr[i];
             }
         }
         System.out.println("Максимальная сумма трат за день составила " + maxArr + " рублей");
-        int minArr = 200_001;
+        int minArr = 200_000;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < minArr) {
                 minArr = arr[i];
@@ -47,7 +47,7 @@ public class Main {
             {
             }
         }
-        System.out.println("Средняя сумма трат за месяц составила " + sum / 30 + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + sum / arr.length + " рублей");
     }
 
     public static void task4() {
